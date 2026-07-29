@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gino Cai | Massage Therapist Resume</title>
+<style>
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #e9ecef;
+    color: #1f2933;
+    font-family: "Aptos", "Segoe UI", Arial, sans-serif;
+  }
+
+  body { padding: 24px 0 52px; }
+
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 0 auto;
+    background: #fff;
+    padding: 12.5mm 14.5mm 10.5mm;
+    box-shadow: 0 3px 14px rgba(0,0,0,.14);
+  }
+
+  .header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 14px;
+    align-items: end;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #293845;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 31px;
+    line-height: 1;
+    letter-spacing: .2px;
+    color: #18232d;
+  }
+
+  .headline {
+    margin-top: 5px;
+    font-size: 14.6px;
+    font-weight: 700;
+    color: #465969;
+  }
+
+  .contact {
+    text-align: right;
+    font-size: 10.6px;
+    line-height: 1.5;
+    color: #3f4b55;
+  }
+
+  .summary {
+    margin-top: 8px;
+    padding: 7px 10px;
+    background: #f3f6f8;
+    border-left: 4px solid #526b7a;
+  }
+
+  .summary p {
+    margin: 0;
+    font-size: 10.7px;
+    line-height: 1.48;
+  }
+
+  .style-line {
+    margin-top: 7px;
+    padding: 6px 9px;
+    border: 1px solid #c7d0d6;
+    background: #fbfcfd;
+    text-align: center;
+    font-size: 10.1px;
+    line-height: 1.4;
+    font-weight: 600;
+    color: #40515d;
+    letter-spacing: .1px;
+  }
+
+  .columns {
+    display: grid;
+    grid-template-columns: 1.52fr .78fr;
+    gap: 15px;
+    margin-top: 9px;
+  }
+
+  section { margin-bottom: 7px; }
+
+  .section-title {
+    margin: 0 0 5px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #aab4bc;
+    font-size: 12.1px;
+    letter-spacing: .65px;
+    text-transform: uppercase;
+    color: #253746;
+  }
+
+  .job, .education-item { margin-bottom: 7px; }
+
+  .job-head {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    align-items: baseline;
+  }
+
+  .job-title {
+    font-size: 11.5px;
+    font-weight: 700;
+    color: #17232c;
+  }
+
+  .job-date {
+    font-size: 9.8px;
+    white-space: nowrap;
+    color: #697780;
+  }
+
+  .company {
+    margin-top: 2px;
+    font-size: 10.4px;
+    font-weight: 600;
+    color: #4c6170;
+  }
+
+  .context {
+    margin-top: 3px;
+    font-size: 9.9px;
+    line-height: 1.4;
+    color: #65727d;
+    font-style: italic;
+  }
+
+  ul {
+    margin: 4px 0 0 16px;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 2.8px;
+    font-size: 9.85px;
+    line-height: 1.38;
+  }
+
+  .compact-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3px;
+  }
+
+  .pill {
+    padding: 4.5px 7px;
+    border: 1px solid #c9d1d7;
+    border-radius: 4px;
+    font-size: 9.9px;
+    line-height: 1.3;
+    background: #fafbfc;
+  }
+
+  .pill strong {
+    display: block;
+    font-size: 10px;
+    color: #23333f;
+  }
+
+  .skill-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.6px;
+  }
+
+  .skill {
+    padding-bottom: 2.7px;
+    border-bottom: 1px dotted #c7ced3;
+    font-size: 9.8px;
+    line-height: 1.3;
+  }
+
+  .note {
+    margin-top: 5px;
+    padding: 5px 7px;
+    background: #f8f4ea;
+    border-left: 3px solid #9b7a3e;
+    font-size: 8.8px;
+    line-height: 1.38;
+    color: #5d513d;
+  }
+
+  .education-item .degree {
+    font-size: 10.6px;
+    font-weight: 700;
+  }
+
+  .education-item .school {
+    margin-top: 2px;
+    font-size: 9.8px;
+    color: #596874;
+  }
+
+  .footer {
+    margin-top: 4px;
+    padding-top: 4px;
+    border-top: 1px solid #d2d8dc;
+    text-align: center;
+    font-size: 8.6px;
+    color: #7a858d;
+  }
+
+  @media screen {
+    .page { zoom: 1.08; }
+  }
+
+  @media print {
+    html, body { background: #fff; padding: 0; }
+    .page {
+      margin: 0;
+      box-shadow: none;
+      width: 210mm;
+      height: 297mm;
+      min-height: 297mm;
+      overflow: hidden;
+      zoom: 1;
+    }
+  }
+</style>
+</head>
+
+<body>
+<div class="page">
+
+  <header class="header">
+    <div>
+      <h1>Gino Cai</h1>
+      <div class="headline">Massage Therapist</div>
+    </div>
+    <div class="contact">
+      Brisbane, QLD<br>
+      0433 846 623<br>
+      roverr9090@gmail.com<br>
+      Student Visa Application in Progress
+    </div>
+  </header>
+
+  <div class="summary">
+    <p>
+      Massage therapist with one year of hands-on experience in Taiwan and six months in Australia.
+      Currently studying the Diploma of Remedial Massage, with experience across relaxation massage,
+      remedial massage, Japanese Shiatsu and Japanese manual therapy. Known for a gentle, attentive
+      and movement-informed treatment approach.
+    </p>
+  </div>
+
+  <div class="style-line">
+    Gentle • Attentive • Movement-informed • Tissue Listening • Tissue Unwinding
+  </div>
+
+  <div class="columns">
+
+    <main>
+      <section>
+        <h2 class="section-title">Work Experience</h2>
+
+        <div class="job">
+          <div class="job-head">
+            <div class="job-title">Massage Therapist</div>
+            <div class="job-date">6 months</div>
+          </div>
+          <div class="company">Chi-Link, Australia</div>
+          <ul>
+            <li>Provided relaxation massage, remedial massage, reflexology and hot stone massage.</li>
+            <li>Adjusted pressure, pace and treatment focus according to client preferences and presentation.</li>
+            <li>Maintained professional communication, client comfort and treatment-room standards.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-head">
+            <div class="job-title">Massage Therapist</div>
+            <div class="job-date">1 year</div>
+          </div>
+          <div class="company">Ichiraku Seitai, Taiwan</div>
+          <div class="context">
+            Japanese-style bodywork studio integrating Seitai, Shiatsu, soft tissue treatment and American-style spinal manipulation.
+          </div>
+          <ul>
+            <li>Worked for one year, progressing from employed trainee to independent contractor.</li>
+            <li>Began treating clients during a six-month in-house training period, with techniques and responsibilities expanding progressively under supervision.</li>
+            <li>Provided Japanese Seitai, Japanese Shiatsu and soft tissue treatment for clients presenting with tension, discomfort and movement restriction.</li>
+            <li>Received supervised training and practical experience in cervical, thoracic and lumbar American-style spinal manipulation within the studio's treatment model.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Education</h2>
+        <div class="education-item">
+          <div class="degree">Diploma of Remedial Massage — In Progress</div>
+          <div class="school">Mastery Institute Australia</div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Professional Strengths</h2>
+        <div class="skill-list">
+          <div class="skill">Musculoskeletal anatomy and bony landmark awareness</div>
+          <div class="skill">Contraindication and treatment-safety awareness</div>
+          <div class="skill">Client-centred pressure, pace and treatment adaptation</div>
+          <div class="skill">Experience with relaxation, chronic tension and movement restriction</div>
+          <div class="skill">Professional client communication and comfort management</div>
+        </div>
+      </section>
+    </main>
+
+    <aside>
+      <section>
+        <h2 class="section-title">Massage Services</h2>
+        <div class="compact-list">
+          <div class="pill"><strong>Relaxation Massage</strong></div>
+          <div class="pill"><strong>Remedial Massage</strong></div>
+          <div class="pill"><strong>Japanese Shiatsu</strong></div>
+          <div class="pill"><strong>Reflexology</strong></div>
+          <div class="pill"><strong>Hot Stone Massage</strong></div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Treatment Background</h2>
+        <div class="skill-list">
+          <div class="skill">Japanese Seitai</div>
+          <div class="skill">Japanese Shiatsu</div>
+          <div class="skill">Tissue Listening</div>
+          <div class="skill">Tissue Unwinding</div>
+          <div class="skill">Myofascial Release</div>
+          <div class="skill">Movement-based Treatment</div>
+          <div class="skill">Gentle Manual Therapy</div>
+          <div class="skill">American-style Spinal Manipulation*</div>
+        </div>
+
+        <div class="note">
+          *Previous training and work experience only. Not presented as a current service in Australia.
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title">Languages</h2>
+        <div class="skill-list">
+          <div class="skill">Mandarin Chinese — Native</div>
+          <div class="skill">English — Professional client communication</div>
+        </div>
+      </section>
+    </aside>
+
+  </div>
+
+  <div class="footer">
+    Resume prepared for massage, spa, wellness and manual therapy employers in Australia.
+  </div>
+
+</div>
+</body>
+</html>
